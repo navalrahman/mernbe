@@ -38,6 +38,10 @@ app.use((req, res, next) => {
   
   }).catch((err) => console.log(err))
 
+  app.get('/', (req,res) => {
+    res.send('hello')
+  })
+
   app.use('/api/course', courseRoute)
   app.use('/api/user', userRoute)
   
