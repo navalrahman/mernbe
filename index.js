@@ -9,13 +9,13 @@ const userRoute = require('./routes/userRoute')
 
 const app = express()
 app.use(bodyParser.json())
-// const corseOption = {
-//         origin: ['https://mern-stack-fe-tau.vercel.app'],
-//         // method: ["post","PUT","GET"],
-//       optionsSuccessStatus: 200
-// }
-// app.use(cors(corseOption))
-app.use(cors())
+const corseOption = {
+        origin: ['http://localhost:3000'],
+        method: ["POST","PUT","GET"],
+        optionsSuccessStatus: 200
+}
+app.use(cors(corseOption))
+// app.use(cors())
 dotenv.config()
 app.use(express.json())
 
