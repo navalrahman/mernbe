@@ -10,7 +10,7 @@ const userRoute = require('./routes/userRoute')
 const app = express()
 app.use(bodyParser.json())
 const corsOptions = {
-  origin: 'https://mern-stack-fe-naval-rahman-ks-projects.vercel.app',
+  origin: 'https://mern-stack-fe-naval-rahman-ks-projects.vercel.app/' || 'https://mern-stack-fe-naval-rahman-ks-projects.vercel.app',
   optionsSuccessStatus: 200
 };
 
