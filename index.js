@@ -9,7 +9,7 @@ const userRoute = require('./routes/userRoute')
 
 const app = express()
 app.use(bodyParser.json())
-const allowedOrigins = ['http://localhost:3000', 'https://mernfe-f083jszqf-naval-rahman-ks-projects.vercel.app'];
+const allowedOrigins = ['http://localhost:3000', 'https://mernfe.vercel.app/signin'];
 
 app.use(cors({
   origin: function (origin, callback) {
