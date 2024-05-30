@@ -10,8 +10,8 @@ const userRoute = require('./routes/userRoute')
 const app = express()
 app.use(bodyParser.json())
 const corseOption = {
-        origin: ['https://mernfe.vercel.app'],
-        method: ["POST","PUT","GET"],
+        origin: 'https://mernfe.vercel.app',
+        // method: ["POST","PUT","GET"],
         optionsSuccessStatus: 200
 }
 app.use(cors(corseOption))
