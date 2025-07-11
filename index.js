@@ -12,7 +12,8 @@ app.use(bodyParser.json())
 // app.use(cors())
 
 app.use(cors({
-  origin: "https://mern-stack-fe-eta.vercel.app/"
+  origin: "https://mern-stack-fe-eta.vercel.app/",
+  credentials: true
 }));
 dotenv.config()
 app.use(express.json())
